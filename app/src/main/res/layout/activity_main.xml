@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="@color/white"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/carrito"
+                android:id="@+id/img_logo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_logo"
+                android:id="@+id/textLogin1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="LOGIN"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                android:id="@+id/TextLogin"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/img_logo"
+                android:id="@+id/txtUsuarioInput">
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite su usuario"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:id="@+id/txtUsuario"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/txtUsuarioInput"
+                android:id="@+id/txtClaveInput">
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite su clave"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:id="@+id/txtClave"/>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Iniciar sesion"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/green"
+                    android:textSize="20sp"
+                    android:id="@+id/btnIngresar" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
